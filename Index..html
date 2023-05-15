@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class= "container">
+      <header class="header">
+        <h1 id="title" class="text-center">
+          Music Taste Survey Form</h1>
+        <p id="description" class="description text-center">
+          "Thank you very much for taking the time to complete the form!"
+        </p>
+      </header>
+      <form id="music-taste">
+        <div class="form-group">
+          <p id="about-you">Tell us about you</p>
+          <label id="name-label" for="name">What is your name?</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-group">
+          <label id="age-label" for="number">Age
+            <span class="clue">(optional)</span>
+          </label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <p>
+          Which of these musical genres do you listen to frequently?
+          <span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+            <input name="prefer" value="rock" type="checkbox" class="input-checkbox">
+            Rock
+          </label>
+          <label>
+            <input name="prefer" value="pop" type="checkbox" class="input-checkbox">
+            Pop
+          </label>
+          <label>
+            <input name="prefer" value="reggae" type="checkbox" class="input-checkbox">
+            Reggae
+          </label>
+          <label>
+            <input name="prefer" value="metal" type="checkbox" class="input-checkbox">
+            Metal
+          </label>
+          <label>
+            <input name="prefer" value="electronic" type="checkbox" class="input-checkbox">
+            Electronic
+          </label>
+          <label>
+            <input name="prefer" value="indie" type="checkbox" class="input-checkbox">
+            Indie
+          </label>
+          <label>
+            <input name="prefer" value="punk" type="checkbox" class="input-checkbox">
+            Punk 
+          </label>
+          <label>
+            <input name="prefer" value="alternative" type="checkbox" class="input-checkbox">
+            Alternative
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Which of these festivals would you like to attend?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select a festival</option>
+            <option value="lollapalooza">Lollapalooza</option>
+            <option value="knofest">Knofest</option>
+            <option value="romorrowland">Tomorrowland</option>
+            <option value="reggae-geel">Reggae Geel</option>
+            <option value="punk-rock-bowling">Punk Rock Bowling</option>
+          </select>
+        </div>
+        <div>
+          <label id="band-label" for="name">What is your favorite band?</label>
+          <input type="text" name="favorite-band" id="favorite-band" class="form-control" placeholder="My favorite band is" required>
+        </div>
+        <div class="form-group">
+          <p>How often do you listen to the band?</p>
+          <label>
+            <input name="listen-band" value="almost-always" type="radio" class="input-radio" checked>
+            "Almost always"
+          </label>
+          <label>
+            <input name="listen-band" value="not-so-often" type="radio" class="input-radio" checked>
+            "Not so often"
+          </label>
+          <label>
+            <input name="listen-band" value="sometimes" type="radio" class="input-radio" checked>
+            "Sometimes"
+          </label>
+        </div>
+        <div class="form-group">
+          <p>What musical instrument would you like to play in a band?</p>
+          <select id="instrument" name="instrument" class="form-control" required>
+            <option disabled selected value>Select an instrument</option>
+            <option value="guitar">Guitar</option>
+            <option value="bass">Bass</option>
+            <option value="drum">Drum</option>
+            <option value="piano">Piano</option>
+            <option value="sax">Sax</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you like to sing in your band?</p>
+          <label>
+            <input name="user-recommend" value="sure" type="radio" class="input-radio" checked>
+            "Sure"
+          </label>
+          <label>
+            <input name="user-recommend" value="could-not" type="radio" class="input-radio" checked>
+            "I could not"
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Now tell us what your ideal band would be like</p>
+          <textarea id="ideal-band" class="input-textarea" name="ideal-band" placeholder="Enter your ideal band here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button"> Submit </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
